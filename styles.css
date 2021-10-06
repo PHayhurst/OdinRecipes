@@ -6,6 +6,7 @@ body {
     font-family: Open Sans, sans-serif;
     font-weight: 400;
     font-style: italic;
+    font-size: 1rem;
 }
 
 .page-title {
@@ -75,7 +76,7 @@ a:link {
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 140%;
 }
 
 .recipe-image {
@@ -129,12 +130,12 @@ h2 {
 .recipe-description {
     margin-left: 2rem;
     margin-right: 2rem; 
-    font-size: 1.2rem;   
+    font-size: 120%;   
 }
 
 .recipe-ingredient {
     line-height: 2rem;
-    font-size: 1.3rem;
+    font-size: 130%;
 }
 
 .ingredients-list {
@@ -160,13 +161,13 @@ h2 {
 }
 
 h2.font-title {
-    font-size: 1.8rem;
+    font-size: 180%;
     /* padding-top: 1rem */
 }
 
 .recipe-step {
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 130%;
     padding-bottom: 1.2rem;
 }
 
@@ -201,7 +202,7 @@ strong {
 
 #home {
     color: #555;
-    font-size: 1.3rem;
+    font-size: 130%;
 }
 
 #home:hover {
@@ -251,6 +252,12 @@ strong {
 }
 
 .recipe-credit {
-    font-size: 1.3rem;
+    font-size: 130%;
+}
+
+@media screen and (max-height: 1000px) {
+    body {
+        font-size: 80%;
+    }
 }
 
