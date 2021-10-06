@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.page-title {
+    margin: 1.2rem 0;
+}
+
+.recipe-book-link {
+    list-style: none;
+}
+
+.recipe-book-title:hover {
+    list-style: none;
+    background-color: rgba(206, 195, 149, 0.52);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:link {
+    color: inherit;
+}
+
+.recipe-book-container {
+    display: flex;
+    justify-content: center;    
+}
+
+.recipe-book-page {
+    padding: 0rem 2rem;
+    margin-top: 2rem;
+    background-color: rgba(252, 240, 200, 0.8);
+    height: 90vh;
+    width: 80vh;
+    border: 1px solid black;
+    border-radius: 1.3em;
+    box-shadow:
+    1px 0px 0px 1px rgba(252, 240, 200, 0.8),
+    1.5px 0px 0px 1.5px rgba(0, 0, 0, 0.9),
+    3px 0px 0px 3px rgba(252, 240, 200, 0.8),
+    3.5px 0px 0px 3.5px rgba(0, 0, 0, 0.9),
+    5px 0px 0px 5px rgba(252, 240, 200, 0.8),
+    8px 0px 0px 8px #911F27; 
+}
+
+.font-center {
+    text-align: center;
+}
+
+.recipe-book-page-left {
+    box-shadow:
+    -1px 0px 0px 1px rgba(252, 240, 200, 0.8),
+    -1.5px 0px 0px 1.5px rgba(0, 0, 0, 0.9),
+    -3px 0px 0px 3px rgba(252, 240, 200, 0.8),
+    -3.5px 0px 0px 3.5px rgba(0, 0, 0, 0.9),
+    -5px 0px 0px 5px rgba(252, 240, 200, 0.8),
+    -8px 0px 0px 8px #911F27;  
+    border-right: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.recipe-book-page-right {
+    border-left: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.recipe-image {
+    background-color: black;
+    padding: 0;
+    display: block;
+    margin:  auto;
+    height: auto;
+    width: 400px;
+    border-radius: 1em;
+    border: 4px solid black;
+}
+
+.recipe-image-small {
+    width: 300px;
+    margin-bottom: 1.5rem;
+    border: 4px solid black;
+    transition: opacity 0.4s;
+}
+
+.recipe-book {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom-color: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+.recipe-book-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+.recipe-book-header {
+    display: flex;
+    cursor: pointer;
+    
+    
+}
+
+.recipe-book-title, .recipe-book-index {
+    flex: 1;
+    padding: .5rem 1.2rem;
+    transition: background-color 0.5s;
+}
+
+.recipe-book-content {
+    display: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+
+.recipe-description {
+    margin-left: 2rem;
+    margin-right: 2rem;    
+}
+
+.recipe-ingredient {
+    line-height: 1.4rem;
+}
+
+.ingredients-list {
+    columns: 2;
+}
+
+.recipe-credit {
+    font-weight: 400;
+}
+
+.font-title {
+    font-family: Ubuntu, sans-serif;
+    font-style: normal; 
+    color: rgb(34, 34, 34);
+}
+
+#credit {
+    color: rgb(211, 11, 11);
+}
+
+#credit:hover {
+    color: red;
+}
+
+h2.font-title {
+    font-size: 1.6rem;
+    /* padding-top: 1rem */
+}
+
+.recipe-step {
+    font-style: normal;
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+}
+
+
+ol {
+    margin:0 0 1.5em;
+    padding:0;
+    counter-reset:item;
+}
+
+ol > li {
+  margin:0;
+  padding:0 0 0 2em;
+  text-indent:-2em;
+  list-style-type:none;
+  counter-increment:item;
+}
+
+ol > li:before {
+    display:inline-block;
+  width:1.5em;
+  padding-right:0.5em;
+  font-weight:bold;
+  text-align:right;
+  content:counter(item) ".";
+}
+
+strong {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#home {
+    color: #555;
+}
+
+#home:hover {
+    color: #111;
+}
+
+.recipe-image-small:hover {
+    opacity: 80%;
+}
+
+.next-page {
+    border-left: 12px solid #222;
+    border-right: 12px solid transparent;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    bottom: 70px;
+    right: 100px;
+    transition: border-color 0.5s;
+}
+
+.prev-page {
+    border-right: 12px solid #222;
+    border-left: 12px solid transparent;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    bottom: 70px;
+    left: 100px;
+    transition: border-color 0.5s;
+}
+
+.next-page:hover {
+    border-left: 12px solid crimson;
+    cursor: pointer;
+}
+
+.prev-page:hover {
+    border-right: 12px solid crimson;
+    cursor: pointer;
+}
+
+.recipe-step-small {
+    font-size: .9rem;
+    padding-bottom: .3rem;
+    padding-top: .3rem;
+}
+

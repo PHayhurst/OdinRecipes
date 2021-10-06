@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Recipes</title>
+</head>
+    <body>
+        <div class="recipe-book-container">
+            <!--LEFT PAGE-->
+            <div class="recipe-book-page recipe-book-page-left">
+                <h1 class="font-title font-center">Odin Recipe Book</h1>
+                <div class="recipe-pictures">
+                    <a href="recipes/lasagna.html"><img class="recipe-image recipe-image-small" src="recipes/img/lasagna.jpg" alt="lasagna picture"></a>
+                    <a href="recipes/pizza.html"><img class="recipe-image recipe-image-small" src="recipes/img/pizza.jpg" alt="pizza picture"></a>
+                    <a href="recipes/carbonara.html"><img class="recipe-image recipe-image-small" src="recipes/img/carbonara.jpg" alt="carbonara picture"></a>
+                    
+                </div>
+            </div>
+
+            <!--RIGHT PAGE-->
+            <div class="recipe-book-page recipe-book-page-right">
+                <div class="recipe-book">
+                    <!-- Lasagna -->
+                    <div class="recipe-book-item">
+                        <div class="recipe-book-header">
+                            <div class="recipe-book-title">
+                                <h2><li class="recipe-book-link"><a href="recipes/lasagna.html">Lasagna Recipe</a></li></h2>
+                            </div>
+                            <h2><div class="recipe-book-index">Page 1</div></h2>
+                        </div>
+                    </div>
+                    <!-- Pizza -->
+                    <div class="recipe-book-item">
+                        <div class="recipe-book-header">
+                            <div class="recipe-book-title">
+                                <h2><li class="recipe-book-link"><a href="recipes/pizza.html">Pizza Recipe</a></li></h2>
+                            </div>
+                            <h2><div class="recipe-book-index">Page 2</div></h2>
+                        </div>
+                    </div>
+                    <!-- Carbonara -->
+                    <div class="recipe-book-item">
+                        <div class="recipe-book-header">
+                            <div class="recipe-book-title">
+                                <h2><li class="recipe-book-link"><a href="recipes/carbonara.html">Carbonara Recipe</a></li></h2>
+                            </div>
+                            <h2><div class="recipe-book-index">Page 3</div></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="recipes/lasagna.html"><div class="next-page"></div></a>
+        </div>
+    </body>
+</html>
