@@ -16,7 +16,7 @@ body {
     list-style: none;
 }
 
-.recipe-book-title:hover {
+.recipe-book-header:hover {
     list-style: none;
     background-color: rgba(206, 195, 149, 0.52);
 }
@@ -75,7 +75,7 @@ a:link {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .recipe-image {
@@ -129,12 +129,12 @@ h2 {
 .recipe-description {
     margin-left: 2rem;
     margin-right: 2rem; 
-    font-size: 1.3rem;   
+    font-size: 1.2rem;   
 }
 
 .recipe-ingredient {
     line-height: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .ingredients-list {
@@ -160,13 +160,13 @@ h2 {
 }
 
 h2.font-title {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     /* padding-top: 1rem */
 }
 
 .recipe-step {
     font-style: normal;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-bottom: 1.2rem;
 }
 
@@ -201,7 +201,7 @@ strong {
 
 #home {
     color: #555;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 #home:hover {
@@ -218,8 +218,8 @@ strong {
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     position: absolute;
-    bottom: 90px;
-    right: 100px;
+    bottom: 8%;
+    left: 89%;
     transition: border-color 0.5s;
 }
 
@@ -229,8 +229,8 @@ strong {
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     position: absolute;
-    bottom: 90px;
-    left: 100px;
+    bottom: 8%;
+    right: 89%;
     transition: border-color 0.5s;
 }
 
@@ -245,12 +245,12 @@ strong {
 }
 
 .recipe-step-small {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: .2rem;
     padding-top: .2rem;
 }
 
 .recipe-credit {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
