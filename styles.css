@@ -259,5 +259,13 @@ strong {
     body {
         font-size: 80%;
     }
+
+    .prev-page {
+        right: 86%;
+    }
+
+    .next-page {
+        left: 86%;
+    }
 }
 
