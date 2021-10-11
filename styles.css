@@ -41,7 +41,7 @@ a:link {
     display: flex;
     justify-content: center;  
     flex-wrap: wrap;  
-    margin:  2rem;
+    margin:  0.5rem 2rem;
     padding: 0 2rem;
 }
 
@@ -53,7 +53,8 @@ a:link {
     display: flexbox;
     flex-direction: column;
     padding: 0rem 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: rgba(252, 240, 200, 0.8);
     min-height: 90vh;
     width: 80vh;
@@ -277,7 +278,7 @@ strong {
 
 
 
-@media (max-width: 1679px) {
+@media (max-width: 1670px) {
 
     .recipe-book-page-left {
         box-shadow:
